@@ -1,0 +1,18 @@
+
+schema {
+    query: Query
+}
+
+type Query {
+    allPeople: [Person]!
+    people(page: Int): [Person]!
+    person(name: String): [Person]!
+}
+
+type Person {
+    name: String!
+    height: String!
+    mass: String!
+    gender: String!
+    homeworld: String!
+}
